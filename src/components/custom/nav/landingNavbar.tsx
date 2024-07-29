@@ -79,7 +79,7 @@ function LandingNavbar() {
                     "font-bold relative after:absolute after:-bottom-0.5 after:w-full after:left-0 after:h-0.5 after:bg-black",
                   "text-black"
                 )}
-                href={e.path}
+                href={AppInfo.main_site_url + e.path}
               >
                 {e.name}
               </Link>
@@ -96,14 +96,14 @@ function LandingNavbar() {
             className={cn(
               "text-white bg-black px-6 py-2 rounded-sm font-semibold"
             )}
-            href="/login"
+            href={AppInfo.main_site_url + "/login"}
           >
             Login
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="/register"
+            href={AppInfo.main_site_url + "/register"}
             className={cn(
               pathname === "/register" &&
                 "font-bold relative after:absolute after:-bottom-0.5 after:w-full after:left-0 after:h-0.5 after:bg-black",
@@ -131,7 +131,7 @@ function LandingNavbar() {
                     "font-bold relative after:absolute after:-bottom-0.5 after:w-full after:left-0 after:h-0.5 after:bg-white text-primary",
                   "text-white"
                 )}
-                href={e.path}
+                href={AppInfo.main_site_url + e.path}
               >
                 {e.name}
               </Link>
@@ -143,14 +143,14 @@ function LandingNavbar() {
             className={cn(
               "text-black bg-white px-6 py-2 rounded-sm font-semibold"
             )}
-            href="/login"
+            href={AppInfo.main_site_url + "/login"}
           >
             Login
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link
-            href="/register"
+            href={AppInfo.main_site_url + "/register"}
             className={cn(
               pathname === "/register" &&
                 "font-bold relative after:absolute after:-bottom-0.5 after:w-full after:left-0 after:h-0.5 after:bg-white text-primary",

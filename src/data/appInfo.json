@@ -2,7 +2,7 @@
   "id": "356458243",
   "name": "KryptoDirect",
   "description": "Your Crypto Companion, Where Crypto meets convenience",
-  "logoUrl": "/assets/images/logo-b.svg",
+  "logoUrl": "/logo.svg",
   "icon": "/assets/images/icons/logo-b.svg",
   "contact": {
     "tel": "+234 7085 9108 62",
@@ -17,5 +17,7 @@
   "app_install_link": {
     "windows": "",
     "apple": ""
-  }
+  },
+  "main_site_url": "https://kryptodirect.xyz",
+  "url": "https://blog.kryptodirect.xyz"
 }
