@@ -1,16 +1,24 @@
 ---
-
+import { RootLayout } from "../layout";
+import { Button } from "@nextui-org/react";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<RootLayout>
+  <div class="flex flex-col p-4">
+    <h1 class="font-bold">Homepage</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae,
+      voluptates consequatur laudantium alias quibusdam harum, aut nobis saepe
+      repudiandae dolorum corrupti at voluptatum reiciendis sequi? Provident,
+      aliquam! Expedita velit excepturi vero repellendus ab dolores, officia
+      suscipit culpa mollitia. Voluptatem a laboriosam, voluptatum eligendi ab
+      omnis optio asperiores ipsum ea pariatur beatae nemo corporis deleniti
+      facilis sunt ut quo? Officiis inventore magnam illum dicta facilis odio
+      quaerat aspernatur totam? Voluptate exercitationem placeat corporis
+      aliquam minus numquam perspiciatis ipsum nulla qui consequuntur natus
+      laboriosam, distinctio quod vel repellendus quos. Quaerat iste recusandae,
+      tenetur, asperiores delectus itaque beatae amet culpa voluptatum vel
+    </p>
+    <Button className="w-fit" color="primary">Click Me</Button>
+  </div>
+</RootLayout>

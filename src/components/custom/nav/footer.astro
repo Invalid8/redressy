@@ -1,0 +1,181 @@
+---
+import { Logo, Socials } from "../index";
+import { Divider } from "@nextui-org/react";
+
+import { AppInfo } from "../../../data";
+
+const footer_links = [
+  {
+    header: "For Individual",
+    subLinks: [
+      {
+        name: "Crypto Debit Card",
+        link: "/#CryptoDebitCard",
+      },
+      {
+        name: "Crypto Wallet",
+        link: "/#CryptoWallet",
+      },
+      {
+        name: "Transfer",
+        link: "/#Transfer",
+      },
+      {
+        name: "Top-Up",
+        link: "/#Top-Up",
+      },
+      {
+        name: "Bills",
+        link: "/#Bills",
+      },
+      {
+        name: "Support",
+        link: "/support",
+      },
+      {
+        name: "Help",
+        link: "/help",
+      },
+    ],
+  },
+  {
+    header: "For Businesses",
+    subLinks: [
+      {
+        name: "Payments",
+        link: "/business#Payments",
+      },
+      {
+        name: "Billing",
+        link: "/business#Billing",
+      },
+      {
+        name: "Payouts",
+        link: "/business#Payouts",
+      },
+      {
+        name: "In-store Payment",
+        link: "/business#In-store Payment",
+      },
+      {
+        name: "Billing",
+        link: "/business#Billing",
+      },
+      {
+        name: "Exchange Rates",
+        link: "/business#ExchangeRates",
+      },
+      {
+        name: "Business FAQs",
+        link: "/business#BusinessFAQs",
+      },
+    ],
+  },
+  {
+    header: "For Developers",
+    subLinks: [
+      {
+        name: "Documentation",
+        link: "/developers/documentation",
+      },
+      {
+        name: "API reference",
+        link: "/developers/api-reference",
+      },
+      {
+        name: "API status",
+        link: "/developers/api-status",
+      },
+      {
+        name: "Integrations",
+        link: "/developers/integrations",
+      },
+      {
+        name: "KryptoDirect Apps",
+        link: "/developers/apps",
+      },
+    ],
+  },
+  {
+    header: "Company",
+    subLinks: [
+      {
+        name: "Careers",
+        link: "/careers",
+      },
+      {
+        name: "Press",
+        link: "/press",
+      },
+      {
+        name: "KrptoDirect Guide",
+        link: "/guide",
+      },
+      {
+        name: "Stats",
+        link: "/stats",
+      },
+      {
+        name: "Legal",
+        link: "/legal",
+      },
+      {
+        name: "Privacy",
+        link: "/privacy",
+      },
+      {
+        name: "About",
+        link: "/about",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
+      },
+    ],
+  },
+];
+---
+
+<footer class="footer bg-gradientA text-black">
+  <div class="inn max-[1020px]:px-0 px-10 w-full max-w-full bg-[#00000033]">
+    <div class="w-full flex flex-col gap-4 p-6 md:p-14 justify-center">
+      <div class="flex flex-col w-full gap-8">
+        <div
+          class="info flex flex-col gap-3 md:max-w-[350px] sm:max-w-[200px] max-w-full"
+        >
+          <Logo color="black" />
+        </div>
+        <div class="row flex justify-between gap-4 flex-wrap gap-y-6">
+          {
+            footer_links.map((nim, index) => {
+              return (
+                <div class="info flex flex-col gap-3">
+                  <span class="top font-bold text-[105%]">{nim.header}</span>
+                  <ul class="flex gap-2 flex-col">
+                    {nim.subLinks.map((e) => (
+                      <li class="font-medium">
+                        <a href={e.link}>{e.name}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
+      <Divider className="my-14 p-0.5 rounded-full bg-black" />
+      <div
+        class="flex justify-between gap-4 flex-wrap items-center mx-auto w-full max-[640px]:justify-center"
+      >
+        <div class="flex gap-4 flex-col max-[450px]:items-center">
+          <p class="text-lg font-semibold">Stay Connected</p>
+          <Socials />
+        </div>
+        <p class="text-lg">
+          © 2024 {AppInfo.name}. All rights reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

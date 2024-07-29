@@ -1,0 +1,31 @@
+{
+  "navigation": {
+    "routes": [
+      {
+        "id": 1,
+        "name": "For Individuals",
+        "path": "/"
+      },
+      {
+        "id": 2,
+        "name": "For Business",
+        "path": "/business"
+      },
+      {
+        "id": 3,
+        "name": "Developers",
+        "path": "/developers"
+      },
+      {
+        "id": 4,
+        "name": "Resources",
+        "path": "/resources"
+      },
+      {
+        "id": 5,
+        "name": "Pricing",
+        "path": "/pricing"
+      }
+    ]
+  }
+}

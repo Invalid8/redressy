@@ -1,0 +1,29 @@
+{
+  "name": "services",
+  "data": [
+    {
+      "id": 1,
+      "icon": "/assets/image/icons/lock.svg",
+      "title": "Payment Gateway",
+      "description": "Streamline your transactions with our robust payment gateway. Accept cryptocurrency payments effortlessly and expand your customer base by offering a convenient and secure payment option."
+    },
+    {
+      "id": 2,
+      "icon": "/assets/image/icons/coding.svg",
+      "title": "Developer Tools",
+      "description": "Fuel your creativity and innovation with our developer tools. Access our SDK and APIs to seamlessly integrate cryptocurrencies into your applications and projects, unlocking new possibilities in the digital realm."
+    },
+    {
+      "id": 3,
+      "icon": "/assets/image/icons/calculation.svg",
+      "title": "Point-of-Sale (POS) System",
+      "description": "Enhance your brick-and-mortar business with our Point-of-Sale (POS) system. Accept cryptocurrency payments in-store, providing your customers with a seamless and futuristic payment experience."
+    },
+    {
+      "id": 4,
+      "icon": "/assets/image/icons/crypto.svg",
+      "title": "Crypto Wallet",
+      "description": "Safeguard your digital assets with our secure cryptocurrency wallet. Enjoy peace of mind knowing that your funds are protected by state-of-the-art security measures, including encryption and multi-factor authentication."
+    }
+  ]
+}

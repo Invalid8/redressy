@@ -1,0 +1,77 @@
+{
+  "name": "assets",
+  "data": [
+    {
+      "id": 1,
+      "icon": "/assets/image/icons/binance-1.svg",
+      "name": "Binance Cash",
+      "price": 469.43
+    },
+    {
+      "id": 2,
+      "icon": "/assets/image/icons/ethereum.svg",
+      "name": "Ethereum",
+      "price": 3094.17
+    },
+    {
+      "id": 3,
+      "icon": "/assets/image/icons/bitcoin-2.svg",
+      "name": "Bitcoin",
+      "price": 66910.96
+    },
+    {
+      "id": 4,
+      "icon": "/assets/image/icons/XRP.svg",
+      "name": "XRP",
+      "price": 0.5254
+    },
+    {
+      "id": 5,
+      "icon": "/assets/image/icons/polygon.svg",
+      "name": "Polygon",
+      "price": 0.5254
+    },
+    {
+      "id": 6,
+      "icon": "/assets/image/icons/dogecoin.svg",
+      "name": "Dogecoin",
+      "price": 0.155
+    },
+    {
+      "id": 7,
+      "icon": "/assets/image/icons/binance.svg",
+      "name": "Binance USD",
+      "price": 1.0
+    },
+    {
+      "id": 8,
+      "icon": "/assets/image/icons/tether.svg",
+      "name": "Tether",
+      "price": 1.0
+    },
+    {
+      "id": 9,
+      "icon": "/assets/image/icons/litecoin.svg",
+      "name": "Litecoin",
+      "price": 83.26
+    },
+    {
+      "id": 10,
+      "icon": "/assets/image/icons/USDC.svg",
+      "name": "USD Coin",
+      "price": 1.0
+    },
+    {
+      "id": 11,
+      "icon": "/assets/image/icons/PYUSD.svg",
+      "name": "Paypal USD",
+      "price": 0.9974
+    },
+    {
+      "id": 12,
+      "icon": "/assets/image/icons/GUSD.svg",
+      "name": "Gemini USD",
+      "price": 1.0
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "navigation": {
+    "routes": [
+      {
+        "id": 1,
+        "name": "Homeles",
+        "path": "/"
+      },
+      {
+        "id": 2,
+        "name": "Featuring",
+        "path": "/features"
+      },
+      {
+        "id": 3,
+        "name": "Gift Cards",
+        "path": "/gift-cards"
+      },
+      {
+        "id": 4,
+        "name": "Market",
+        "path": "/market"
+      },
+      {
+        "id": 5,
+        "name": "Get Started",
+        "path": "/get-started"
+      },
+      {
+        "id": 6,
+        "name": "Contact Us",
+        "path": "/contact"
+      }
+    ]
+  }
+}

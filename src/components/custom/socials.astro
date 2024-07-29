@@ -1,0 +1,79 @@
+---
+import TwitterIcon from "../../assets/image/icons/twitter.svg";
+import YoutubeIcon from "../../assets/image/icons/youtube.svg";
+import FacebookIcon from "../../assets/image/icons/facebook.svg";
+import MailIcon from "../../assets/image/icons/mail.svg";
+import InstagramIcon from "../../assets/image/icons/instagram.svg";
+import { Button } from "@nextui-org/react";
+import { Send } from "lucide-react";
+import { Image } from "astro:assets";
+---
+
+<div class="socials flex gap-4 items-center">
+  <Button
+    className="rounded-full grid place-content-center p-2"
+    variant="bordered"
+    isIconOnly
+  >
+    <Image
+      src={TwitterIcon}
+      alt={"twitter"}
+      width={24}
+      height={24}
+      class="w-[24px] h-[24px]"
+    />
+  </Button>
+
+  <Button
+    className="rounded-full grid place-content-center p-2"
+    variant="bordered"
+    isIconOnly
+  >
+    <Image
+      src={FacebookIcon}
+      alt={"facebook"}
+      width={24}
+      height={24}
+      class="w-[24px] h-[24px]"
+    />
+  </Button>
+  <Button
+    className="rounded-full grid place-content-center p-2"
+    variant="bordered"
+    isIconOnly
+  >
+    <Image
+      src={MailIcon}
+      alt={"gmail"}
+      width={24}
+      height={24}
+      class="w-[24px] h-[24px]"
+    />
+  </Button>
+  <Button
+    className="rounded-full grid place-content-center p-2"
+    variant="bordered"
+    isIconOnly
+  >
+    <Image
+      src={YoutubeIcon}
+      alt={"youtube"}
+      width={24}
+      height={24}
+      class="w-[24px] h-[24px]"
+    />
+  </Button>
+  <Button
+    className="rounded-full grid place-content-center p-2"
+    variant="bordered"
+    isIconOnly
+  >
+    <Image
+      src={InstagramIcon}
+      alt={"instagram"}
+      width={24}
+      height={24}
+      class="w-[24px] h-[24px]"
+    />
+  </Button>
+</div>

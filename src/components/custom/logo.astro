@@ -1,0 +1,56 @@
+---
+import LogoImageBlack from "../../assets/image/logo.svg";
+import LogoImageWhite from "../../assets/image/logo-w.svg";
+import LogoImageGreen from "../../assets/image/logo-g.svg";
+import LogoImagePurple from "../../assets/image/logo-p.svg";
+import { AppInfo } from "../../data";
+import { cn } from "../../lib";
+import { Image } from "astro:assets";
+
+interface Props {
+  color?: "auto" | "white" | "black" | "default";
+  className?: string;
+  iconResize?: boolean;
+}
+
+let { color, className, iconResize } = Astro.props;
+
+if (!color) color = "default";
+
+function cLogo(
+  color?: "auto" | "white" | "black" | "default" | "green" | "purple"
+): any {
+  switch (color) {
+    case "white":
+      return LogoImageWhite;
+
+    case "black":
+      return LogoImageBlack;
+
+    case "green":
+      return LogoImageGreen;
+
+    case "purple":
+      return LogoImagePurple;
+
+    default:
+      LogoImageWhite;
+  }
+}
+---
+
+<div
+  class={cn(
+    "w-fit h-fit",
+    iconResize &&
+      "w-full h-full min-w-[64px] min-h-[64px] max-w-[64px] max-h-[64px] overflow hidden"
+  )}
+>
+  <Image
+    src={cLogo(color)}
+    alt={AppInfo.name}
+    height={44}
+    width={230}
+    class={"object-fit"}
+  />
+</div>

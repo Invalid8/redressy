@@ -1,0 +1,35 @@
+---
+import "../styles/global.css";
+import { SiteConfig, cn, InternetCheck, LanguageProvider } from "../lib";
+import { NextUIProvider } from "@nextui-org/react";
+import { LandingNavbar, Footer } from "../components/custom";
+import { fade, ViewTransitions } from "astro:transitions";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={SiteConfig.description} />
+    <title>{SiteConfig.title}</title>
+    <ViewTransitions transition:animate={fade({ duration: 0.8 })} />
+  </head>
+  <body
+    class={cn(
+      "min-h-screen bg-background max-w-screen-3xl m-auto font-san antialiased custom-scroll-bard p-0"
+    )}
+  >
+    <NextUIProvider>
+      <LanguageProvider>
+        <LandingNavbar client:only="react" />
+        <div style={{ minHeight: "calc(100vh - 80px)" }}>
+          <slot />
+        </div>
+        <Footer />
+      </LanguageProvider>
+      <InternetCheck />
+    </NextUIProvider>
+  </body>
+</html>
